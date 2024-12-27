@@ -57,7 +57,7 @@ function removeFromCart(index) {
 
 // Clear cart
 function clearCart() {
-  cart = [];
+  cart = []; // Empty the cart array
   sessionStorage.setItem("cart", JSON.stringify(cart)); // Clear sessionStorage
   renderCart(); // Re-render cart
 }
